@@ -35,7 +35,7 @@
 	color: yellow;
 	font-size: 40px;
 	text-shadow: red 0.1em 0.1em 0.2em;
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke: 1px white;
 }
 
 body {
