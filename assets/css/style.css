@@ -44,3 +44,11 @@ body {
 	background-repeat: no-repeat;
 	background-color:#87F;
 }
+
+@media only screen and (max-width: 500px) {
+
+	body{
+		background-image:url(../images/cooltreeflip2.jpg);
+		background-repeat: repeat-y;
+	}
+}
