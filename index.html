@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mah pretties</title>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+
+<body>
+
+<!-- Display the countdown timer in an element -->
+<div class="jumbotron">
+    <div class="container" id='jContainer'>
+        <h1 id='title'>COUNTDOWN TO DESTINY</h1>
+        <div id='until'><span style="color:#ffd400;"> </span><span style="color:#ffea00;">T</span><span style="color:#ffff00;">h</span><span style="color:#dbff00;">u</span><span style="color:#b6ff00;">r</span><span style="color:#92ff00;">s</span><span style="color:#6dff00;">d</span><span style="color:#49ff00;">a</span><span style="color:#24ff00;">y</span><span style="color:#00ff00;">,</span><span style="color:#00ff2b;"> </span><span style="color:#00ff55;">M</span><span style="color:#00ff80;">a</span><span style="color:#00ffaa;">r</span><span style="color:#00ffd5;">c</span><span style="color:#00ffff;">h</span><span style="color:#00d5ff;"> </span><span style="color:#00aaff;">2</span><span style="color:#0080ff;">n</span><span style="color:#0055ff;">d</span><span style="color:#002bff;">,</span><span style="color:#0000ff;"> </span><span style="color:#1700ff;">2</span><span style="color:#2e00ff;">:</span><span style="color:#4600ff;">3</span><span style="color:#5d00ff;">0</span><span style="color:#7400ff;">p</span><span style="color:#8b00ff;">m</span></div><p id="demo"></p>
+
+    </div>
+</div>
+
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Mar 2, 2017 19:30:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+
+
+</html>
+
