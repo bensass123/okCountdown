@@ -50,5 +50,6 @@ body {
 	body{
 		background-image:url(../images/cat.gif);
 		background-repeat: repeat-y;
+		-webkit-transform: rotateX(0);
 	}
 }
