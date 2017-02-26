@@ -45,11 +45,80 @@ body {
 	background-color:#87F;
 }
 
+#weather {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -66px;
+}
+
+#weather h2 {
+	font-size: 35px;
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+  color:black;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.forecasts {
+	color: white;
+}
+
+.day {
+	font-size: 24px;
+	color:white;
+}
+
+.temps{
+	color:white;
+}
+
+.daydiv {
+		background-color:rgba(255,0,0,0.5);
+		max-width: 	100px;
+		    padding: 17px;
+}
+
+.alldays {
+	position: absolute;
+	top:0;
+	left:0;
+	display: inline-flex;
+	padding
+}
+
+#weather h3,h2{
+	position: relative;
+	top: -50;
+	text-shadow: red 0.1em 0.1em 0.2em;
+	color:white;
+	font-weight: bolder;
+	-webkit-text-stroke: 1px green;
+
+}
+
 @media only screen and (max-width: 500px) {
 
 	body{
 		background-image:url(../images/cooltreeflip2.jpg);
 		background-repeat: repeat-y;
 		-webkit-transform: rotateX(0);
+	}
+
+	.alldays {
+	    top: 143px;
+	    right: 0;
+	    display: inline-flex;
+	    position: absolute;
 	}
 }
