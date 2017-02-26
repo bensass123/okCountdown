@@ -51,7 +51,7 @@ $(document).ready(function() {
       
       for(var i=0;i<weather.forecast.length;i++) {
         if(weather.forecast[i].date === '02 Mar 2017' || weather.forecast[i].date === '03 Mar 2017' || weather.forecast[i].date === '04 Mar 2017' || weather.forecast[i].date === '05 Mar 2017') {
-          html += '<div class="daydiv panel panel-default"><div class="panel-body><p class ="forecasts"><p class="day">' + weather.forecast[i].day+': </p> <p class="temps">High: '+weather.forecast[i].high+ '<br>  Low: ' + weather.forecast[i].low + '</p></p></div></div>';
+          html += '<div class="daydiv panel panel-default"><div class="panel-body><p class ="forecasts"><p class="day">' + weather.forecast[i].day+': </p> <p class="temps">High: '+weather.forecast[i].high+ '<br>  Low: ' + weather.forecast[i].low + '<br><p class="textforecast">' + weather.forecast[i].text +'</p></p></div></div>';
         }
       }
       html+='</div>';
